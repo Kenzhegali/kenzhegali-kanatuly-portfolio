@@ -1,0 +1,153 @@
+.footer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  @media (max-width: $screen-sm-max) {
+    background-color: $footer-bg;
+    border-radius: 15px;
+  }
+
+  &-wrap {
+    background-color: $footer-wrap-bg;
+    border-radius: 20px;
+    padding: 40px 51px;
+    margin-top: 15px;
+
+    @media (max-width: $screen-s-max) {
+      padding: 40px 10px;
+    }
+  }
+
+  .footer-interactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: $footer-interactions-color;
+
+    @media (max-width: $screen-xs-max) {
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .cooperation {
+      @media (max-width: $screen-sm-max) {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .footer-title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 0;
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .interaction-item {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+
+    .item-link {
+      color: $item-link-color;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-icons {
+    @media (max-width: $screen-sm-max) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      justify-content: center;
+      gap: 17px;
+    }
+
+    .download {
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
+    }
+
+    .icons-block {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 13px;
+    }
+  }
+
+  .footer-navigation {
+    margin-top: 66px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: $screen-sm-max) {
+      margin-top: 33px;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      gap: 10px;
+    }
+
+    .navigation-link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 15.6px;
+      letter-spacing: 0;
+      color: $navigation-link-color;
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 12px;
+        line-height: 14.4px;
+        text-align: center;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-copyright {
+    margin-top: 53px;
+    color: $c-footer-copyright;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.75px;
+    letter-spacing: -0.12px;
+    vertical-align: middle;
+
+    @media (max-width: $screen-sm-max) {
+      margin-top: 30px;
+      font-size: 12px;
+    }
+  }
+}

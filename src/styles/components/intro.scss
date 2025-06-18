@@ -1,0 +1,205 @@
+//intro
+.intro {
+  background: $intro-bg;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 25px;
+  @media (max-width: $screen-sm-max) {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .intro-description {
+    margin: 90px 0 100px 100px;
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+      margin: 45px 31px 0 31px;
+    }
+
+    .intro-title {
+      font-weight: 800;
+      font-style: italic;
+      font-size: 60px;
+      line-height: 100%;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: $intro-title-color;
+      @media (max-width: $screen-sm-max) {
+        font-size: 35px;
+        line-height: 36px;
+        letter-spacing: 0;
+      }
+      @media (max-width: $screen-s-max) {
+        font-size: 28px;
+      }
+    }
+
+    .intro-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21.6px;
+      letter-spacing: -0.18px;
+      vertical-align: middle;
+      color: $intro-text-color;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      @media (max-width: $screen-sm-max) {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.15px;
+      }
+      @media (max-width: $screen-s-max) {
+        font-size: 13px;
+      }
+    }
+
+    .intro-btn {
+      @include button();
+      color: $intro-btn-color;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $intro-btn-bg-hover;
+        color: $intro-btn-color-hover;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        @include button($fz: 16px, $lh: 18px, $pad: 14px 20px);
+      }
+    }
+  }
+
+  .car-img {
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
+  }
+
+  .mobile-car-img {
+    display: none;
+    @media (max-width: $screen-sm-max) {
+      display: block;
+      max-width: 500px;
+      max-height: 375px;
+      width: 100%;
+    }
+  }
+
+  .note {
+    position: absolute;
+    top: 18px;
+    right: 21px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: right;
+    text-decoration: underline;
+    cursor: pointer;
+    color: $note-color;
+    transition: 0.3s;
+    z-index: 0;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      bottom: 21px;
+      top: unset;
+      right: 40%;
+    }
+    @media (max-width: $screen-xs-max) {
+      right: 35%;
+    }
+    @media (max-width: $screen-s-max) {
+      bottom: 12px;
+      right: 30%;
+    }
+  }
+}
+
+
+//pagination
+.pagination {
+  margin-top: 30px;
+  background-color: $pagination-bg;
+  border-radius: 15px;
+  @media (max-width: $screen-sm-max) {
+    background-color: $pagination-bg-mobile;
+  }
+
+  .pagination-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 39px 32px 36px 0;
+    gap: 61px;
+    @media (max-width: $screen-lg - 1) {
+      padding: 35px 0;
+      flex-wrap: wrap;
+      gap: 31px;
+    }
+    @media (max-width: $screen-sm-max) {
+      padding-right: 0;
+      gap: 10px;
+    }
+    @media (max-width: $screen-xs-max) {
+      justify-content: center;
+    }
+    @media (max-width: $screen-s-max) {
+      gap: 5px;
+    }
+    @media (max-width: $screen-xs-max) {
+      .society {
+        order: 4;
+      }
+      .blog {
+        order: 5;
+      }
+    }
+  }
+
+  .pagination-list {
+    @media (max-width: $screen-sm-max) {
+      background-color: $pagination-list-bg-mobile;
+      padding: 10px 6px;
+      border-radius: 9px;
+    }
+
+    .pagination-link {
+      display: flex;
+      align-items: center;
+      color: $pagination-link-color;
+      font-weight: 500;
+      font-size: 19.08px;
+      line-height: 100%;
+      letter-spacing: 0;
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      .pagination-link-svg {
+        margin-right: 7px;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 13px;
+        line-height: 14.3px;
+      }
+      @media (max-width: $screen-s-max) {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+
+
+
+
+

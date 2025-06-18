@@ -1,0 +1,77 @@
+.payment {
+  color: $payment-color;
+  margin-top: 100px;
+  background-color: $payment-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 50px 90px 0 94px;
+  border-radius: 20px;
+  min-height: 320px;
+
+  @media (max-width: $screen-sm-max) {
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .payment-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0;
+    margin-bottom: 47px;
+    .title-linebreak {
+      display: block;
+    }
+    @media (max-width: $screen-md-max) {
+      font-size: 25px;
+      line-height: 30px;
+      letter-spacing: 0;
+    }
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .payment-btn {
+    padding: 18px 72px;
+    border-radius: 7px;
+    border: 2px solid $payment-btn-border;
+    background: $payment-btn-bg;
+    color: $payment-btn-color;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin-bottom: 61px;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    @media (max-width: $screen-md-max) {
+      padding: 13px 50px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 48px;
+    }
+  }
+
+  .payment-img {
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
+  }
+  .payment-img-mobile {
+    display: none;
+    @media (max-width: $screen-sm-max) {
+      display: block;
+      max-width: 290px;
+      width: 100%;
+    }
+  }
+}

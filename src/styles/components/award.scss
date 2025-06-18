@@ -1,0 +1,95 @@
+.awards {
+  position: relative;
+  text-align: center;
+  margin-top: 98px;
+  color: $awards-color;
+
+  .awards-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+    margin-bottom: 45px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 25px;
+      line-height: 29.87px;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  .award-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+
+    &:hover {
+      filter: invert(100%);
+    }
+
+    .award-arrow-icon {
+      @media (max-width: $screen-sm-max) {
+        display: none;
+      }
+    }
+
+    .award-arrow-mob-icon {
+      display: none;
+
+      @media (max-width: $screen-sm-max) {
+        display: block;
+      }
+    }
+  }
+
+  .awards-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-height: 318px;
+
+    .award-items {
+      background-color: $award-items-bg;
+      border-radius: 20px;
+      flex-basis: 32.5%;
+
+      @media (max-width: $screen-sm-max) {
+        flex-basis: 48.5%;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        flex-basis: 100%;
+      }
+
+      .award-img {
+        padding-top: 40px;
+        max-height: 160px;
+        object-fit: contain;
+      }
+
+      .award-text {
+        padding: 34px 40px 45px 40px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19.2px;
+        letter-spacing: -0.16px;
+
+        @media (max-width: $screen-sm-max) {
+          font-size: 13px;
+          line-height: 19.5px;
+          letter-spacing: -0.13px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

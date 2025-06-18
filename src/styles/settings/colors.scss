@@ -1,0 +1,114 @@
+//colors
+$c-body: #F5F5F5;
+$c-burger: rgba(241, 245, 255, 1);
+$c-blue: rgb(35, 53, 114);
+$c-black: #000000;
+$c-light-blue: #95A8FF;
+$c-light-gray: #E9EFFF;
+$c-pink: #FA95AE;
+$c-red: #F51047;
+$c-violet: #8345C8;
+$c-red-gradient: linear-gradient(90deg, #F51047 0%, #D00939 100%);
+$c-violet-gradient: linear-gradient(181.32deg, #9665FF -10.08%, #F489A3 98.88%);
+$c-white: #ffffff;
+$c-blue-gray: #233572AD;
+$c-burger-hr: #A1B6FF99;
+$mobil-border: #BDCAED;
+$c-copyright: #7A84A6;
+
+
+//header
+$header-bg: $c-white;
+$link-color: $c-blue;
+$link-hover-color: $c-red;
+$location-text-color: $c-blue;
+$lang-btn-color: $c-red;
+$lang-btn-border: $c-red;
+$lang-btn-bg: $c-white;
+$lang-btn-color-hover: $c-white;
+$lang-btn-bg-hover: $c-red;
+$login-btn-bg: $c-red;
+$login-btn-bg-hover: $c-white;
+$login-btn-border: $c-red;
+$login-btn-border-hover: $c-pink;
+$login-btn-color: $c-white;
+
+//burgermenu
+$login-btn-mobile-bg: $c-white;
+$login-btn-mobile-border: $c-blue;
+$burger-overlay-bg: $c-burger;
+$burger-overlay-border: $c-black;
+$burger-item-link-color: $c-blue;
+$nav-list-bg: $c-white;
+$nav-item-link-color: $c-blue;
+$burger-phone-color: $c-blue;
+$burger-lang-btn-bg: $c-burger;
+$burger-lang-btn-color: $c-red;
+$burger-lang-btn-border: $c-red;
+$burger-time-color: $c-blue;
+$burger-hr-border: $c-burger-hr;
+$burger-whatsapp-color: $c-blue;
+
+//intro
+$intro-bg: $c-red-gradient;
+$intro-title-color: $c-white;
+$intro-text-color: $c-white;
+$intro-btn-color: $c-red;
+$intro-btn-color-hover: $c-white;
+$intro-btn-bg-hover: $c-pink;
+$note-color: $c-white;
+
+//pagination
+$pagination-bg: $c-white;
+$pagination-bg-mobile: $c-body;
+$pagination-list-bg-mobile: $c-white;
+$pagination-link-color: $c-blue;
+
+//product-cards
+$product-title-color: $c-blue;
+$card-list-color: $c-white;
+$highlighted-text-color: $c-white;
+
+//mobileBanner
+$mobile-banner-color: $c-blue;
+$c-mobil-banner-border: $mobil-border;
+//award
+$awards-color: $c-blue;
+$award-items-bg: $c-light-gray;
+
+//payment
+$payment-color: $c-white;
+$payment-bg: $c-light-blue;
+$payment-btn-border: $c-white;
+$payment-btn-bg: $c-light-blue;
+$payment-btn-color: $c-white;
+
+//contacts
+$contacts-bg: $c-white;
+$phone-link-color: $c-blue;
+$time: $c-blue-gray;
+
+//footer
+$footer-bg: $c-white;
+$footer-wrap-bg: $c-white;
+$footer-interactions-color: $c-blue;
+$item-link-color: $c-blue;
+$navigation-link-color: $c-blue-gray;
+$c-footer-copyright: $c-copyright;
+
+//card background color
+$card-blue-bg: $c-light-blue;
+$reward-card-bg: $c-light-gray;
+$card-gradient-bg: $c-violet-gradient;
+$card-pink-bg: $c-pink;
+
+$cards-bg: $card-blue-bg, $card-pink-bg, $card-blue-bg, $card-gradient-bg;
+
+
+//btn text colors
+$btn-card-colors: (
+        1: #233572,
+        2: #F51047,
+        3: #233572,
+        4: #8345C8
+);

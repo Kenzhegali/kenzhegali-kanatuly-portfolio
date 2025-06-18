@@ -1,0 +1,15 @@
+@mixin flexbox($jc: center, $ai: center,) {
+  align-items: $ai;
+  display: flex;
+  justify-content: $jc;
+}
+@mixin button($bd: none ,$bgc: $c-white, $brs: 8px, $fz: 20px, $fw: 500, $lh: 24px, $pad: 15px 30px, $tal: center) {
+  border: $bd;
+  background-color: $bgc;
+  border-radius: $brs;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  padding: $pad;
+  text-align: $tal;
+}

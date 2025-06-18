@@ -1,0 +1,27 @@
+// settings
+@import "settings/colors";
+@import "@styles/settings/fonts";
+@import "settings/variables";
+
+// mixins
+@import "tools/mixins";
+
+// generic
+@import "generic/base";
+
+// elements
+@import "components/burger";
+// your files here
+
+// components
+@import "components/header";
+@import "components/intro";
+@import "components/product_cards";
+@import "components/mobile_banner";
+@import "components/award";
+@import "components/payment";
+@import "components/contacts";
+@import "components/footer";
+
+//objects
+@import "objects/container";

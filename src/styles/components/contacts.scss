@@ -1,0 +1,51 @@
+.contacts {
+  background-color: $contacts-bg;
+  border-radius: 15px;
+  padding: 23px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: $screen-sm-max) {
+    flex-direction: column-reverse;
+    padding: 40px 50px;
+  }
+  @media (max-width: $screen-s-max) {
+    padding: 40px 0;
+  }
+
+  .social-network + .social-network {
+    margin-left: 15px;
+  }
+
+  .phone-link {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0;
+    text-align: right;
+    color: $phone-link-color;
+    @media (max-width: $screen-sm-max) {
+      font-size: 28px;
+      line-height: 28px;
+      display: block;
+
+    }
+  }
+
+  .time {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: $time;
+    margin-left: 20px;
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px;
+      line-height: 21.6px;
+      letter-spacing: 0;
+      display: block;
+      margin: 7px 0 20px 0;
+    }
+  }
+}
